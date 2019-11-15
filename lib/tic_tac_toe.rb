@@ -98,7 +98,7 @@ end
 
   def winner
     if won?
-      @board[won?[0]] == "X" 
+      @board[won?[0]] == "X"
       return "X"
     elsif @board[won?[0]] == "O"
       return "O"
