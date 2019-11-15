@@ -98,10 +98,7 @@ end
 
   def winner
     if won?
-      @board[won?[0]] == "X"
-      return "X"
-    elsif @board[won?[0]] == "O"
-      return "O"
+      @board[won?[0]] == "X" ? "X" : "O"
     else
       nil
     end
