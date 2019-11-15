@@ -97,15 +97,12 @@ end
   end
 
   def winner
-    if (@board[win_combo[0]]) == "X" && (@board[win_combo[1]]) == "X" && (@board[win_combo[2]]) == "X"
-      puts "X"
-    elsif (@board[win_combo[0]]) == "O" && (@board[win_combo[1]]) == "O" && (@board[win_combo[2]]) == "O"
-      puts "O"
+    if won?
+      @board[won?[0]] == "X" ? "X" : "O"
     else
       nil
     end
   end
-
 
 end
 
