@@ -106,7 +106,7 @@ end
     end
   end
 
-  
+
 end
 
 #game =TicTacToe.new
