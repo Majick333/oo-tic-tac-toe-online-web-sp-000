@@ -18,13 +18,13 @@ class TicTacToe
       while over? == false
         turn
       end
-      if won? 
+      if won?
         puts "Congradulations #{winner}!"
       elsif draw?
         puts "Cat's Game!"
       end
     end
-        
+
   end
 
      def display_board
