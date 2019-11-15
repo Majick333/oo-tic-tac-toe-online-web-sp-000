@@ -15,16 +15,16 @@ class TicTacToe
     [2,4,6]] #dgnl 2
 
     def play
-    #@board = Array.new(9, " ")
-    # Play until someone wins or there is a draw
-    initialize
-    turn until over?
-    # Congratulate the winner
-    won? ? puts("Congratulations #{winner}!") : puts("Cat's Game!")
-    # Ask if they'd like to play again
-    puts "Would you like to play again? (Y or N)"
-    # If yes, then #play again
-    gets.strip.downcase == "y" || gets.strip.downcase == "yes" ? play : puts("Goodbye!")
+      while over? == false
+        turn
+      end
+      if won? 
+        puts "Congradulations #{winner}!"
+      elsif draw?
+        puts "Cat's Game!"
+      end
+    end
+        
   end
 
      def display_board
